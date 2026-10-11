@@ -13,7 +13,7 @@
 
 Modern production failures across Kubernetes workloads are rarely simple syntax errors. They stem from broken state assumptions, silent networking deadlocks, mutating webhook proxies, and cascading infrastructure pressure that standard application logs misdiagnose as application code crashes.
 
-**K8s Fault Analyzer (Lite Edition) v2.1.1** is a standalone, local diagnostic utility built on top of the **Pattern-Based Root Cause Isolation Model (PBRCIM)** framework. It processes raw Kubernetes telemetry—including `kubelet` streams, `containerd`/CRI-O runtime logs, CoreDNS queries, and API server event dumps—to deliver structured, post-mortem incident reports in **less than 10 milliseconds**.
+**K8s Fault Analyzer (Lite Edition) v2.1.1** is a standalone, local diagnostic utility built on top of my **Pattern-Based Root Cause Isolation Model (PBRCIM)** framework. It processes raw Kubernetes telemetry—including `kubelet` streams, `containerd`/CRI-O runtime logs, CoreDNS queries, and API server event dumps—to deliver structured, post-mortem incident reports in **less than 10 milliseconds**.
 
 Unlike generic LLM wrappers or cloud-dependent observability agents, this tool operates **100% offline in isolated local memory**. Your cluster logs, pod identities, internal endpoints, and sensitive credentials never leave your machine.
 
@@ -38,7 +38,7 @@ https://github.com/user-attachments/assets/your-video-link-here.mp4
 
 ---
 
-## 🧭 Supported Diagnostic Vectors (V2.1.1)
+## 🧭 Supported Diagnostic Vectors (v2.1.1)
 
 The v2.1.1 Lite release covers **10 core Kubernetes failure vectors**, accounting for approximately 80% of daily production crash scenarios:
 
